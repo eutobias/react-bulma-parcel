@@ -1,20 +1,14 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
-
-// Components
-import Notification from './components/Notification'
 import AddButon from './components/AddButton'
-import ProductList from './components/ProductList'
 
 const App = props => {
   return (
-    <Fragment>
-      {/* <Notification /> */}
+    <div>
+      <h1>TESTE 123</h1>
       <AddButon />
-      <ProductList />
-    </Fragment>
+    </div>
   )
 }
 
-var mountNode = document.getElementById('app')
-ReactDOM.render(<App />, mountNode)
+ReactDOM.render(<App />, document.getElementById('app'))
